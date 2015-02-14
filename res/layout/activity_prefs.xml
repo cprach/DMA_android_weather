@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Parent linear layout with vertical orientation -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000" >
+
+    <LinearLayout
+        style="@style/my_layout_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- Title -->
+
+        <LinearLayout
+            style="@style/my_layout_linear_child"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txtTitle"
+                style="@style/my_text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_preferences_activity" />
+        </LinearLayout>
+
+        <!-- City -->
+
+        <LinearLayout
+            style="@style/my_layout_linear_child"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txtCurrentCityLabel"
+                style="@style/my_text_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/prefs_label_currentcity" />
+
+            <TextView
+                android:id="@+id/txtCurrentCityName"
+                style="@style/my_text_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty" />
+        </LinearLayout>
+
+        <!-- measurement type -->
+
+        <LinearLayout
+            style="@style/my_layout_linear_child"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txtCurrentMeasurementTypeLabel"
+                style="@style/my_text_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/prefs_label_currentmeasurementtype" />
+
+            <TextView
+                android:id="@+id/txtCurrentMeasurementTypeName"
+                style="@style/my_text_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty" />
+        </LinearLayout>
+
+        <!-- text color -->
+
+        <LinearLayout
+            style="@style/my_layout_linear_child"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txtCurrentTextColorLabel"
+                style="@style/my_text_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/prefs_label_currenttextcolor" />
+
+            <TextView
+                android:id="@+id/txtCurrentTextColorName"
+                style="@style/my_text_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty" />
+        </LinearLayout>
+
+        <!-- spinners -->
+
+        <Spinner
+            android:id="@+id/cities_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/units_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/textcolor_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnSave"
+            style="@style/my_text_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="savePref"
+            android:text="@string/gen_save" />
+
+        <Button
+            android:id="@+id/btnClose"
+            style="@style/my_text_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="closePrefs"
+            android:text="@string/gen_close" />
+    </LinearLayout>
+
+</ScrollView>

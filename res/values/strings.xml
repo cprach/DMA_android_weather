@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- App labels -->
+    <string name="app_name">AUSTRALIA WEATHER APP</string>
+    <string name="app_creatorName">Instructor@computerpower</string>
+    <string name="app_studentNum">90001008</string>
+
+    <!-- Action labels -->
+    <string name="action_settings">Settings</string>
+    <string name="action_getWeather">Weather</string>
+    <string name="action_about">About</string>
+    <string name="action_test">Action Test</string>
+
+    <!-- Misc -->
+    <string name="empty">empty</string>
+
+    <!-- Titles -->
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_preferences_activity">Your preferences</string>
+    <string name="title_activity_prefs">PrefsActivity</string>
+    <string name="title_activity_getweather">Open Weather api: Weather Information</string>
+    <string name="title_activity_about">About this app</string>
+
+    <!-- General labels -->
+    <string name="gen_save">Save</string>
+    <string name="gen_close">Close</string>
+
+    <!-- Prefs labels -->
+    <string name="prefs_label_currentcity">Current city:</string>
+    <string name="prefs_label_currentmeasurementtype">Current measurement type:</string>
+    <string name="prefs_label_currenttextcolor">Current text color:</string>
+
+    <!-- Weather labels -->
+    <string name="getweather_label_mintemp">Min temp:</string>
+    <string name="getweather_label_maxtemp">Max temp:</string>
+    <string name="getweather_label_currenttemp">Current temp:</string>
+    <string name="getweather_label_24hour">24 hour forecast</string>
+
+    <!-- Weather buttons -->
+    <string name="btn_set_preferences">Set preferences</string>
+    <string name="hello_world">Hello world!</string>
+
+    <!-- Pref spinner 1st item -->
+    <string name="prefs_spinner_city">Choose city:</string>
+    <string name="prefs_spinner_textcolor">Choose text color:</string>
+    <string name="prefs_spinner_measurementtype">Choose measurement type:</string>
+
+    <!-- Aboout labels -->
+    <string name="about_label_createdby">Created by:</string>
+    <string name="about_label_studentnum">Student number:</string>
+
+</resources>
