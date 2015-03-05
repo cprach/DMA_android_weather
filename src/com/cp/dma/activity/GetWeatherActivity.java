@@ -145,7 +145,7 @@ public class GetWeatherActivity extends ActionBarActivity {
 		// Pass city name and measurement type to execute request.
 		gi.execute(cityName, measurementType);
 	}
-	
+
 	public void convertJsonString(String result) {
 
 		// Called by asyncTask onPostExecute(...
@@ -184,9 +184,9 @@ public class GetWeatherActivity extends ActionBarActivity {
 
 		// Loop through the first 8 (24 hours) List objects.
 		for (int viewCounter = 0; viewCounter < 8; viewCounter++) {
-			
+
 			List currentList = ro.getList().get(viewCounter);
-			
+
 			// min and max temps.
 			if (viewCounter == 0) { // if first pass.
 				minTemp = currentList.getMain().getTempMin();
@@ -225,6 +225,17 @@ public class GetWeatherActivity extends ActionBarActivity {
 		TextView txtCurrentTempValue = (TextView)findViewById(R.id.txtCurrentTempValue); //
 		txtCurrentTempValue.setText(currentTemp); //
 
+		// Set measurement type display
+		TextView txtMeasurementType = (TextView)findViewById(R.id.txtMeasurementType);
+		String storedMeasurementType = getSharedPreferences(PREFSNAME,PREF_MODE_PRIVATE).getString(PREFKEY_MEASUREMENTTYPE, DEFAULT_MEASUREMENTTYPE_METRIC);
+		String measurementType = "empty";
+		if (storedMeasurementType.equals("Metric")) {
+			measurementType = "Celcius";
+		} else {
+			measurementType = "Farenheight";
+		}
+		txtMeasurementType.setText(measurementType);
+		
 		// Set the min and max temps in the textviews.
 		TextView txtMinValue = (TextView)findViewById(R.id.txtMinValue);
 		txtMinValue.setText(String.format("%.1f", minTemp));

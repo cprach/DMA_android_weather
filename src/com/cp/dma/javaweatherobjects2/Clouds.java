@@ -1,7 +1,6 @@
 
 package com.cp.dma.javaweatherobjects2;
 
-import javax.annotation.Generated;
 import com.google.gson.annotations.Expose;
 
 public class Clouds {

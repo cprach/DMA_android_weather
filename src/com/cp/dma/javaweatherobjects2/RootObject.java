@@ -2,10 +2,8 @@
 package com.cp.dma.javaweatherobjects2;
 
 import java.util.ArrayList;
-import javax.annotation.Generated;
 import com.google.gson.annotations.Expose;
 
-@Generated("org.jsonschema2pojo")
 public class RootObject {
 
     @Expose

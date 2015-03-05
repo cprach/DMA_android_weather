@@ -39,7 +39,7 @@ public class PrefsActivity extends ActionBarActivity implements OnItemSelectedLi
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		// View customizations must occur before the View is set.		
-		customiseView();
+		//customiseView();
 		setContentView(R.layout.activity_prefs);
 		intitialiseSpinners();
 		populateLabels();
